@@ -148,7 +148,7 @@ MongoDB collections include:
 ## 🔑 Authentication
 Authentication is implemented using **JWT**.  
 
-- Register/Login → returns a JWT token  
+- Signup/Signin → returns a JWT token  
 - Use `Authorization: Bearer <token>` in headers  
 
 ---
@@ -157,17 +157,17 @@ Authentication is implemented using **JWT**.
 
 ### Register User
 ```http
-POST /api/v1/auth/register
+POST /api/v1/auth/signup
 ```
 
 ### Login User
 ```http
-POST /api/v1/auth/login
+POST /api/v1/auth/signin
 ```
 
 ### Get Profile
 ```http
-GET /api/v1/users/profile
+GET /api/v1/users/users
 Authorization: Bearer <token>
 ```
 
